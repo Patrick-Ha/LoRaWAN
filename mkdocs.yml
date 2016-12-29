@@ -1,0 +1,24 @@
+site_name: LoRa
+theme: 'material'
+site_author: 'Diep Ha'
+copyright: 'Copyright (c) 2016 Diep Ha'
+extra:
+  version: '0.1'
+  logo:    'images/lora.jpg'
+  palette:
+    primary: 'cyan'
+    accent: 'light blue'
+  font: 'none'
+#    text: 'Libre Franklin'
+#    code: 'Roboto Mono'
+  author:
+    github: 'Diep Ha'
+pages:
+  - Trang chủ:                        index.md
+  - Nội dung:
+    - LoRa:                           lora/introduction.md   
+    - LoRaWAN:                        lorawan/lorawan.md 
+    - Dự án:                          
+      - Giới thiệu:                   projects/list.md
+      - Mạng LoRa:                    projects/loranetwork/lorabasic.md 
+      - Mạng LoRaWAN:                 projects/lorawannetwork/lorawanbasic.md
