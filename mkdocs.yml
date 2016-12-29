@@ -12,7 +12,7 @@ extra:
 #    text: 'Libre Franklin'
 #    code: 'Roboto Mono'
   author:
-    github: 'Diep Ha'
+    github: 'Patrick-Ha'
 pages:
   - Trang chủ:                        index.md
   - Nội dung:
