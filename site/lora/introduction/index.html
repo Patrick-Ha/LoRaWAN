@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>LoRa - LoRa</title>
+      
+      
+      
+      
+        <meta name="author" content="Diep Ha">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="LoRa">
+    <meta property="og:image" content="None/../../images/lora.jpg">
+    <meta name="apple-mobile-web-app-title" content="LoRa">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../images/lora.jpg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-cyan palette-accent-light-blue">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Nội dung <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        LoRa
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/Patrick-Ha" title="@Patrick-Ha on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/lora.jpg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          LoRa
+          <span class="version">
+            0.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Trang chủ" href="../..">
+      Trang chủ
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Nội dung</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="LoRa" href="./">
+      LoRa
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="SX1276/77/78/79" href="#sx1276777879">
+                SX1276/77/78/79
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Đặc điểm kỹ thuật số" href="#ac-iem-ky-thuat-so">
+                Đặc điểm kỹ thuật số
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="LoRa Digital Interface" href="#lora-digital-interface">
+                LoRa Digital Interface
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Chế độ hoạt động của modem LoRa" href="#che-o-hoat-ong-cua-modem-lora">
+                Chế độ hoạt động của modem LoRa
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="LoRa Modem State Machine Sequences" href="#lora-modem-state-machine-sequences">
+                LoRa Modem State Machine Sequences
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="LoRaWAN" href="../../lorawan/lorawan/">
+      LoRaWAN
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Dự án</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Giới thiệu" href="../../projects/list/">
+      Giới thiệu
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Mạng LoRa" href="../../projects/loranetwork/lorabasic/">
+      Mạng LoRa
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Mạng LoRaWAN" href="../../projects/lorawannetwork/lorawanbasic/">
+      Mạng LoRaWAN
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/Patrick-Ha" target="_blank" title="@Patrick-Ha on GitHub">
+                  @Patrick-Ha on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="lora-la-gi">LoRa là gì?</h1>
+<p>LoRa là một kỹ thuật không dây được phát triển để tạo nên năng lượng thấp, mạng diện rộng (LPWANS) được đòi hỏi cho các ứng dụng M2M và IoT. </p>
+<p>Kỹ thuật điều chế sóng LoRa được phát minh năm 2010 bởi startup Cycleo của Pháp, sau đó được mua lại năm 2012 bởi công ty Semtech. Hiện nay Semtech độc quyền các dòng chip LoRa.</p>
+<h2 id="sx1276777879">SX1276/77/78/79</h2>
+<p>Dòng chip SX1278 tích hợp bộ modem trải phổ mà nó có khả năng đặt được khoảng cách rộng đáng kể so với hệ thống dựa trên điều chế FSK hay OOK. </p>
+<p>Các dòng chip SX1276/77/78/79 gần như giống nhau về đặc tính, cách hoạt động, chỉ khác nhau về các hệ số trải phổ và băng thông. SX1278 đưa ra nhiều lựa chọn về băng thông và hệ số trải phổ, nhưng chỉ hoạt động ở băng tần thấp hơn UHF.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Chip</th>
+<th align="center">Khoảng tần số</th>
+<th align="center">Hệ số trải phổ</th>
+<th align="center">Băng thông</th>
+<th align="center">Tốc độ bit hiệu quả</th>
+<th align="center">Độ nhạy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SX1276</td>
+<td align="center">137-1020 Mhz</td>
+<td align="center">6-12</td>
+<td align="center">7.8-500 kHz</td>
+<td align="center">0.012-37.5 kbps</td>
+<td align="center">-111 đến -148 dBm</td>
+</tr>
+<tr>
+<td align="center">SX1277</td>
+<td align="center">137-1020 Mhz</td>
+<td align="center">6-9</td>
+<td align="center">7.8-500 kHz</td>
+<td align="center">0.11-37.5 kbps</td>
+<td align="center">-111 đến -139 dBm</td>
+</tr>
+<tr>
+<td align="center">SX1278</td>
+<td align="center">137-525  Mhz</td>
+<td align="center">6-12</td>
+<td align="center">7.8-500 kHz</td>
+<td align="center">0.012-37.5 kbps</td>
+<td align="center">-111 đến -148 dBm</td>
+</tr>
+<tr>
+<td align="center">SX1279</td>
+<td align="center">137-960  Mhz</td>
+<td align="center">6-12</td>
+<td align="center">7.8-500 kHz</td>
+<td align="center">0.012-37.5 kbps</td>
+<td align="center">-111 đến -148 dBm</td>
+</tr>
+</tbody>
+</table>
+<p>Do trong người viết chỉ sử dụng chip SX1278 nên từ đây sẽ nói những đặc tính của SX1278.</p>
+<p>SX1278 là một bộ thu phát low-IF bán song công. SX1278 bao gồm hai bộ tham chiếu thời gian, một là bộ dao động RC và một bộ dao động thạch anh 32 Mhz.</p>
+<p>Mọi thành phần phía ngoại vi RF và trạng thái máy số cấu hình hoàn toàn thông qua giao tiếp SPI cho phép truy cập và các thanh ghi SX1278. </p>
+<p>SX1278 được trang bị cả bộ điều giải tiêu chuẩn FSK và bộ điều giải trải phổ diện rộng (LoRa). </p>
+<h2 id="ac-iem-ky-thuat-so">Đặc điểm kỹ thuật số</h2>
+<p>Chế độ diện rộng LoRa cung cấp truyền thông trải phổ khoảng cách rất xa và độ can nhiễu cao trong khi tối thiểu dòng tiêu thụ. Nó phối hợp trải phổ số, xử lý tín hiệu số, và mã hõa sửa lỗi forward để đạt được hiệu suất chưa từng có. </p>
+<p>LoRa có ba thành phần chính có thể cấu hình được:</p>
+<ul>
+<li>Băng thông (BW)</li>
+<li>Tỉ lệ mã hóa (CR)</li>
+<li>Hệ số trải phổ (SF)</li>
+</ul>
+<h3 id="he-so-trai-pho">Hệ số trải phổ</h3>
+<p>Hệ số trải phổ là số lượng chips trên mỗi symbol được sử dụng trong xử lý dữ liệu trước khi truyền tín hiệu đi. </p>
+<table>
+<thead>
+<tr>
+<th align="center">Hệ số trải phổ </br>(RegModulationCfg)</th>
+<th align="center">Hệ số trải phổ </br>(Chips/symbol)</th>
+<th align="center">SNR bộ giải điều chế </br> LoRa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">64</td>
+<td align="center">-5 dB</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">128</td>
+<td align="center">-7.5 dB</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">256</td>
+<td align="center">-10 dB</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">512</td>
+<td align="center">-12.5 dB</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">1024</td>
+<td align="center">-15 dB</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">2048</td>
+<td align="center">-17.5 dB</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">4096</td>
+<td align="center">-20 dB</td>
+</tr>
+</tbody>
+</table>
+<p>Trong các kỹ thuật trải phổ, giá trị của thành phần này càng lớn, khả năng bộ thu tránh nhiều càng cao. Giá trị trải phổ càng lớn, thời gian để nó gửi một gói tin nhiều hơn, nhưng khoảng cách được xa hơn bởi vì bộ thu có độ nhạy tốt hơn.</p>
+<h3 id="ti-le-ma-hoa">Tỉ lệ mã hóa</h3>
+<p>Để cải thiện độ mạnh của kết nối hơn nữa modem LoRa dùng mã hóa lỗi tuần hoàn để thực hiện việc phát hiện lỗi trước và sửa lỗi. </p>
+<table>
+<thead>
+<tr>
+<th align="center">CodingRate </br>(RegTxCfg1)</th>
+<th align="center">Cyclic Coding </br>Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">4/5</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">4/6</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">4/7</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">4/8</td>
+</tr>
+</tbody>
+</table>
+<p>Giá trị tỉ lệ mã hóa phải được chọn là: 4/5, 4/6, 4/7 và 4/8. Nó chỉ ra rằng mỗi 4 bit có ích sẽ được mã hóa bởi 5, 6, 7 hoặc 8 bit truyền đi phụ thuộc và giá trị của chúng. Tỉ lệ mã hóa nhỏ hơn (nhỏ nhất là 4/8) thời gian truyền cao hơn, vì thế nó cần nhiều thời gian hơn để truyền một gói. Điều này sẽ làm bớt tác vụ của việc thu nhận, bởi vì mỗi symbol rộng hơn ở thời gian, vì thế bộ nhận có thể giải điều chế các gói với khả năng thu nhận thấp hơn. Điều này có nghĩa bộ nhận có độ nhạy tốt hơn, nhưng truyền dữ liệu chậm ảnh hưởng tới việc tiêu thụ pin: dành nhiều thời gian hơn trong chế độ truyền kéo theo tiêu thụ nhiều pin hơn.</p>
+<h3 id="bang-thong">Băng thông</h3>
+<p>Việc tăng băng thông tín hiệu cho phép sử dụng tốc độ dữ liệu hiệu quả cao hơn, vì thế giảm thời gian truyền để tăng độ nhạy. Nếu đòi hỏi truyền dẫn nhanh, giá trị 500 khz là tốt nhất. Nhưng nếu cần tầm rộng thì giá trị 7.8 kHz cần phải được cấu hình. </p>
+<table>
+<thead>
+<tr>
+<th align="center">Băng thông </br>(kHz)</th>
+<th align="center">Hệ số trải phổ</th>
+<th align="center">Tỉ lệ mã hóa</th>
+<th align="center">Rb quy định</br>(bps)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">7.8</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">10.4</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">15.6</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">37</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">125</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">293</td>
+</tr>
+<tr>
+<td align="center">250</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">586</td>
+</tr>
+<tr>
+<td align="center">500</td>
+<td align="center">12</td>
+<td align="center">4/5</td>
+<td align="center">1172</td>
+</tr>
+</tbody>
+</table>
+<p><em>Lưu ý:</em> Trong băng tần thấp hơn (169 Mhz), băng thông 250 kHz và 500 kHz không được hỗ trợ.</p>
+<h3 id="cau-truc-goi-tin-lora">Cấu trúc gói tin LoRa</h3>
+<p>Bộ điều giải LoRa dùng hai loại định dạng gói tin, Explicit và Implicit. Gói tin Explicit gồm có một header ngắn mà nó bao gồm thông tin về số lượng byte, tỉ lệ mã hóa và có CRC được sử dụng trong gói tin hay không. </p>
+<p>Gói tin LoRa gồm có 3 yếu tố:</p>
+<ul>
+<li>Một preamble (mở đầu).</li>
+<li>Một header tùy chọn.</li>
+<li>Payload dữ liệu.</li>
+</ul>
+<p><img alt="" src="../images/packetLoRa.png" /></p>
+<h4 id="preamble">Preamble</h4>
+<p>Preamble được sử dụng để đồng bộ bộ thu với dòng dữ liệu đến. Mặc định gói tin được cấu hình với chuỗi dài 12 symbol. Đây là giá trị có thể lập trình được nên độ dài preamble có thể được mở rộng. Dộ dài preamble được phát đi có thể được thay đổi bằng việc cài đặt thanh ghi <em>PreambleLength</em> từ 6 tới 65535.</p>
+<p>Bộ thu đảm bảo quá trình phát hiện preamble được restart định kỳ. Vì lý do này độ dài preamble nên được cấu hình đồng nhất với chiều dài preamble bộ phát. Trường hợp mà độ dài preamble không biết trước, hay có thể thay đổi, độ dài preamble tối đa nên được cấu hình ở phía bộ thu.</p>
+<h4 id="header">Header</h4>
+<p>Tùy thuộc vào lựa chọn chế độ hoạt động 2 loại header. </p>
+<h5 id="che-o-header-hien-explicit">Chế độ Header hiện (Explicit)</h5>
+<p>Đây là chế độ mặc định, ở đây header cung cấp thông tin của payload:</p>
+<ul>
+<li>Độ dài payload (byte).</li>
+<li>Tỉ lệ mã sửa lỗi phía trước. (The forward error correction code rate)</li>
+<li>CRC 16-bit cho payload.</li>
+</ul>
+<p>Header được truyền đi với mã phát hiện lỗi tối đa (4/8). Nó cũng có CRC của nó cho phép bộ thu kiểm tra độ chính xác của header.</p>
+<h5 id="che-o-header-an-implicit">Chế độ Header ẩn (Implicit)</h5>
+<p>Trong tình huống nhất định, nơi mà payload, tỉ lệ mã hóa và CRC là cố định hoặc được biết trước, nó có thể có lợi do giảm thời gian truyền. </p>
+<p>Trong chế độ này header bị loại bỏ ra khỏi gói tin. Trong trường hợp này độ dài payload, tỉ lệ mã lỗi và CRC phải cấu hình bằng tay ở cả hai phía của kết nối radio.</p>
+<p><em>Chú ý: với SF = 6, chỉ sử dụng được chế độ header ẩn (Implicit)</em></p>
+<h2 id="lora-digital-interface">LoRa Digital Interface</h2>
+<p>Modem LoRa bao gồm 3 loại digital interface, các thanh ghi cấu hình tĩnh, các thanh ghi trạng thái và một bộ đêm dữ liệu FIFO. Mọi truy cập thông qua giao tiếp SPI.</p>
+<h3 id="bo-nho-em-fifo-che-o-lora">Bộ nhớ đệm FIFO chế độ LoRa</h3>
+<p>SX1276/77/78/79 được trang bị với một bộ nhớ đệm RAM 256 byte mà nó chỉ được truy xuất trong chế độ LoRa. Vùng RAM này, được tùy chỉnh hoàn toàn bởi người dùng và cho phép truy cập để thu nhận, hoặc truyền dữ liệu. Mọi truy cập tới bộ nhớ đệm dữ liệu LoRa được hoàn thành thông qua chuẩn giao tiếp SPI. </p>
+<p>Bộ nhớ đệm dữ liệu FIFO có thể được đọc trong mọi chế độ hoạt động ngoại trừ chế độ ngủ. Nó tự động xóa nội dung cũ sau qua mỗi lần chuyển tiếp vào chế độ nhận.</p>
+<p><img alt="" src="../images/FifoDiagram.png" /></p>
+<h3 id="nguyen-ly-hoat-ong">Nguyên lý hoạt động</h3>
+<p>Do cơ chế cấu hình dual port, nó có thể đồng thời lưu trữ cả thông tin truyền và nhận trong bộ nhớ đệm FiFo. Mặc định, thiết bị được cấu hình tại lúc bật nguồn là dành một nửa bộ nhớ sẵn có cho RX (<code>RegFifoRxBaseAddr</code> khởi tạo tại địa chỉ 0x00) và một nửa còn lại dành cho Tx (<code>RegFifoTxBaseAddr</code> khởi tạo tại địa chỉ 0x80).</p>
+<p>Bộ nhớ đệm dữ liệu FiFo sẽ bị xóa khi thiết bị ở chế độ NGỦ, vì thế không truy cập vào bộ đệm dữ liệu FiFo trong chế độ này. Tuy nhiên, dữ liệu ở bộ nhớ đệm dữ liệu FiFo vẫn được giữ lại khi chuyển qua các chế độ LoRa khác. Bộ đệm dữ liệu không tự xóa (trừ khi nếu thiết bị vào chế độ ngủ) và dữ liệu sẽ chỉ bị "xóa" khi một dữ liệu mới được ghi vào vị trí bộ nhớ đang sử dụng. (ghi đè)</p>
+<p>Chú ý rằng dữ liệu nhận được sẽ được ghi vào bộ nhớ đệm FIFO thậm chí nếu CRC không có hiệu lực, nếu kích thước gói tin vượt quá bộ nhớ đệm được cấp phát cho Rx, nó sẽ ghi đè lên phần truyền của bộ nhớ đệm dữ liệu.</p>
+<h2 id="che-o-hoat-ong-cua-modem-lora">Chế độ hoạt động của modem LoRa</h2>
+<p>Modem LoRa có các chế độ sau đây</p>
+<table>
+<thead>
+<tr>
+<th align="center">Chế độ hoạt động</th>
+<th align="center">Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SLEEP</td>
+<td align="center">Chế độ công suất thấp. Trong chế độ này chỉ SPI và các thanh ghi cấu hình được truy cập. FIFO LoRa không thể truy cập.</td>
+</tr>
+<tr>
+<td align="center">STANDBY</td>
+<td align="center">Cả bộ dao động Thạnh anh và các khối baseband LoRa được hoạt động. RF và PLLs bị vô hiệu hóa.</td>
+</tr>
+<tr>
+<td align="center">FSTX</td>
+<td align="center">Đây là chế độ tổng hợp tần số cho việc truyền. PLL được chọn cho việc truyền bị khóa và hoạt động tại tần số truyền. Phần RF tắt.</td>
+</tr>
+<tr>
+<td align="center">FSRX</td>
+<td align="center">Đây là chế độ tổng hợp tần số cho việc nhận. PLL được chọn cho việc nhận bị khóa và hoạt động tại tần số nhận. Phần RF tắt.</td>
+</tr>
+<tr>
+<td align="center">TX</td>
+<td align="center">Khi cho hoạt động mọi khối còn lại cần thiết cho việc truyền dẫn, PA, truyền gói tin và trờ về chế độ Standby</td>
+</tr>
+<tr>
+<td align="center">RXCONTINOUS</td>
+<td align="center">Khi cho hoạt động mọi khối còn lại cần thiết cho việc nhận, xử lý mọi dữ hiệu nhận được cho tới khi một yêu cầu người dùng mới được tạo ra để thay đổi chế độ hoạt động.</td>
+</tr>
+<tr>
+<td align="center">RXSINGLE</td>
+<td align="center">Khi cho hoạt động mọi khối còn lại cần thiết cho việc nhận, ở trạng thái này cho tới khi một gói dữ liệu có hiệu lực được nhận và sau đó trở về chế độ Standby</td>
+</tr>
+<tr>
+<td align="center">CAD</td>
+<td align="center">Khi ở chế độ CAD, thiết bị sẽ kiểm tra một kênh truyền đã cho trước để phát hiện tín hiệu preamble LoRa</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lora-modem-state-machine-sequences">LoRa Modem State Machine Sequences</h2>
+<h3 id="luu-o-truyen-du-lieu">Lưu đồ truyền dữ liệu</h3>
+<p>Trong chế độ truyền, để có được công suất tiêu thụ tối ưu thì chỉ cho phép các khối RF, PLL, RA khi gói dữ liệu cần được phát đi.</p>
+<p><img alt="" src="../images/TxFlowChart.png" /></p>
+<ul>
+<li>Các thanh ghi cấu hình static chỉ có thể được truy cập ở chế độ Sleep, chế độ Stanbdy hoặc chế độ FSTX.</li>
+<li>FIFO LoRa chỉ có thể được đổ vào ở chế độ Standby.</li>
+<li>Dữ liệu truyền đi được khở tạo bằng việc gửi yêu cầu chế độ TX.</li>
+</ul>
+<h3 id="luu-o-nhan-du-lieu">Lưu đồ nhận dữ liệu</h3>
+<p>Có 2 chế độ nhận dữ liệu: chế độ bộ nhận 1 lần và nhận liên tục.</p>
+<p><img alt="" src="../images/RxFlowChart.png" /></p>
+<h4 id="che-o-hoat-ong-nhan-mot-lan">Chế độ hoạt động nhận một lần</h4>
+<p>Trong chế độ này, modem dò tìm một preamble trong một chu kỳ thời gian cho trước. Nếu hết chu kỳ (gọi là cửa sổ thời gian) không tìm thấy preamble, chip tạo ra ngắt <code>RxTimeout</code> và trở lại chế độ Standby. Độ dài cửa sổ thời gian nhận (symbol) được định nghĩa trong thanh ghi <code>RegSymbTimeout</code> và nó trong khoảng 4 tới 1023 symbol.</p>
+<p>Tại cuối payload, ngắt <code>RxDone</code> được tạo cùng với ngắt <code>PayloadCrcError</code> nếu CRC không có hiệu lực. Sau khi có ngắt RxDone radio tự động đi vào chế độ Standby.</p>
+<p>Trong chế độ hoạt động nhận một lần, để tiết kiệm năng lượng, ngay khi nhận được gói tin thì tắt các khối PLL và RF. Lưu đồ như sau:</p>
+<ol>
+<li>Đặt <code>FifoAddrPtr</code> thành <code>FifoRxBaseAddr</code>.</li>
+<li>Thanh ghi cấu hình tĩnh có thể được ghi hoặc ở chế độ Sleep, chế độ Stanbdy hoặc ở chế độ FSRX.</li>
+<li>Bộ nhận sẽ chờ nhận một preamble có hiệu lực. </li>
+</ol>
+<h4 id="che-o-hoat-ong-nhan-lien-tuc">Chế độ hoạt động nhận liên tục</h4>
+<p>Trong chế độ nhận liên tục, mode quét liên tục để tìm kiếm một preamble. Mỗi khi một preamble được phát hiện modem bám theo nó tới khi gói tin được nhận và sau đó tiếp tục chờ preamble tiếp theo. </p>
+<p>Trong chế độ RX nhận liên tục, trái ngược với chế độ RX nhận một lần, ngắt <code>RxTimeout</code> sẽ không bao giờ xảy ra và thiết bị sẽ không bao giờ vào chế độ Standby một cách tự động.</p>
+<p>Trong chế độ nhận liên tục quá trình xử lý như dưới đây:</p>
+<ol>
+<li>Trong khi ở chế độ Sleep hoặc Standby chọn chế độ RXCONT.</li>
+<li>Trong lúc nhận một header CRC có hiệu lực thì ngắt <code>RxDone</code> được set. Radio ở trong chế độ RXCONT chờ gói tin LoRa tiếp theo.</li>
+<li>Cờ <code>PayloadCrcError</code> sẽ được kiểm tra cho tính toàn vẹn của gói tin.</li>
+<li>Nếu gói tin nhận được chính xác bộ đêm dữ liệu FIFO có thể được đọc.</li>
+<li>Quá trình nhận (bước 2-4) có thể được lặp lại hoặc thoát khỏi chế độ này nếu muốn.</li>
+</ol>
+<h4 id="mapping-cac-chan-dio-trong-che-o-lora">Mapping các chân DIO trong chế độ LoRa</h4>
+<p>Có 6 chân GPIO có sẵn được sử dụng ở chế độ LoRa. Việc sắp xếp của chúng được trình bày ở bảng dưới và phụ thuộc vào việc cấu hình thanh ghi <code>RegDioMapping1</code> và <code>RegDioMapping2</code>. Ở đây chỉ trình bày về các chân sử dụng thường xuyên là DIO3, DIO2, DIO1, DIO0 và 2 chế độ mapping <code>00</code> và <code>01</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">DIOx </br>Mapping</th>
+<th align="center">DIO3</th>
+<th align="center">DIO2</th>
+<th align="center">DIO1</th>
+<th align="center">DIO0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">00</td>
+<td align="center">CadDone</td>
+<td align="center">FhssChangeChannel</td>
+<td align="center">RxTimeout</td>
+<td align="center">RxDone</td>
+</tr>
+<tr>
+<td align="center">01</td>
+<td align="center">ValidHeader</td>
+<td align="center">FhssChangeChannel</td>
+<td align="center">FhssChangeChannel</td>
+<td align="center">TxDone</td>
+</tr>
+</tbody>
+</table>
+<p>Trên đây là những kiến thức cơ bản để bắt đầu tìm hiểu về chip SX127x và cách hoạt động của LoRa. Sau đây là phần lập trình và dự án thực tế để hiểu chi tiết hơn.</p>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 Diep Ha &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../.." title="Trang chủ">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Trang chủ
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../../lorawan/lorawan/" title="LoRaWAN">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                LoRaWAN
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
